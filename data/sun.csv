@@ -1,0 +1,2 @@
+id,name,latin,type,radius,radius_unit,surface_area,surface_area_unit,volume,volume_unit,mass,mass_unit,surface_gravity,surface_gravity_unit
+sun,Sun,Sol,fixed star,696342,km,6.09E+12,km2,1.41E+18,km3,1.99E+30,kg,28,earth

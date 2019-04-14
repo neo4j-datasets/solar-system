@@ -1,0 +1,32 @@
+LOAD CSV WITH HEADERS FROM "file:///sun.csv" as line
+MERGE (s:FixedStar {name: line.name})
+ON CREATE SET
+  s.id = line.id,
+  s.latin = line.latin,
+  s.type = line.type,
+  s.radius = toFloat(line.radius),
+  s.radiusUnit = line.radius_unit,
+  s.surfaceArea = toFloat(line.surface_area),
+  s.surfaceArea_unit = line.surface_area_unit,
+  s.volume = toFloat(line.volume),
+  s.volumeUnit = line.volume_unit,
+  s.mass = toFloat(line.mass),
+  s.massUnit = line.mass_unit,
+  s.surfaceGravity = toFloat(line.surface_gravity),
+  s.surfaceGravity_unit = line.surface_gravity_unit,
+  s.axialTilt = toFloat(line.axial_tilt)
+ON MATCH SET
+  s.id = line.id,
+  s.latin = line.latin,
+  s.type = line.type,
+  s.radius = toFloat(line.radius),
+  s.radiusUnit = line.radius_unit,
+  s.surfaceArea = toFloat(line.surface_area),
+  s.surfaceArea_unit = line.surface_area_unit,
+  s.volume = toFloat(line.volume),
+  s.volumeUnit = line.volume_unit,
+  s.mass = toFloat(line.mass),
+  s.massUnit = line.mass_unit,
+  s.surfaceGravity = toFloat(line.surface_gravity),
+  s.surfaceGravity_unit = line.surface_gravity_unit,
+  s.axialTilt = toFloat(line.axial_tilt);

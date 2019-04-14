@@ -1,0 +1,10 @@
+id,name,latin,type,aphelion,aphelion_unit,perihelion,perihelion_unit,eccentricity,orbital_period,orbital_period_unit,average_orbital_speed,average_orbital_speed_unit,mean_radius,mean_radius_unit,surface_area,surface_area_unit,volume,volume_unit,mass,mass_unit,mean_density,mean_density_unit,surface_gravity,surface_gravity_unit,axial_tilt
+mercury,Mercury,Mercurius,terrestrial planets,69816900,km,46001200,km,0.20563,87.9691,day,47.362,km/s,2439.7,km,74800000,km2,60830000000,km3,3.30E+23,kg,5.427,g/cm3,3.7,m/s2,0.034
+venus,Venus,Venus,terrestrial planets,108939000,km,107477000,km,0.006772,224.701,day,35.02,km/s,6051.8,km,4.60E+08,km2,9.28E+11,km3,4.87E+24,kg,5.243,g/cm3,8.87,m/s2,2.64
+earth,Earth,Terra,terrestrial planets,152100000,km,147095000,km,0.0167086,365.256363,day,29.78,km/s,6371,km,510072000,km2,1.08E+12,km3,5.97E+24,kg,5.514,g/cm3,9.807,m/s2,23.4392811
+mars,Mars,Mars,terrestrial planets,249200000,km,206700000,km,0.0934,686.971,day,24.007,km/s,3389.5,km,144798500,km2,1.63E+11,km3,6.42E+23,kg,3.9335,g/cm3,3.72076,m/s2,25.19
+jupiter,Jupiter,Juppiter,jovian planets,8.17E+09,km,7.41E+09,km,0.0489,4332.59,day,13.07,km/s,69911,km,1.00E+07,km2,1.43E+15,km3,1.90E+27,kg,1326,g/cm3,24.79,m/s2,3.13
+saturn,Saturn,Saturnus,jovian planets,1.51E+10,km,1.35E+10,km,0.0565,10759.22,day,9.68,km/s,58232,km,4.27E+10,km2,8.27E+14,km3,5.68E+26,kg,0.687,g/cm3,10.44,m/s2,26.73
+uranus,Uranus,Ouranos,ice giants,20.11,AU,18.33,AU,0.046381,30688.5,day,6.8,km/s,25362,km,8.12E+09,km2,6.83E+13,km3,8.68E+25,kg,1.27,g/cm3,8.69,m/s2,97.77
+neptune,Neptune,Neptunus,ice giants,30.33,AU,29.81,AU,0.009456,60182,day,5.43,km/s,24622,km,7.62E+09,km2,6.25E+13,km3,1.02E+26,kg,1.638,g/cm3,11.15,m/s2,28.32
+pluto,Pluto,Pluto,plutoid,49.305,AU,29.658,AU,0.2488,90560,day,4.67,km/s,1188.3,km,1.78E+07,km2,7.06E+09,km3,1.30E+22,kg,1.854,g/cm3,0.62,m/s2,122.53
