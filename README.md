@@ -11,7 +11,7 @@ We provide solar system datasets for use Neo4j.
    curl https://raw.githubusercontent.com/neo4j-datasets/solar-system/master/cypher/load_sun.cypher | cypher-shell -a bolt://[host]:[port] -u [user] -p [password]  
    curl https://raw.githubusercontent.com/neo4j-datasets/solar-system/master/cypher/load_planets.cypher | cypher-shell -a bolt://[host]:[port] -u [user] -p [password]  
    curl https://raw.githubusercontent.com/neo4j-datasets/solar-system/master/cypher/load_localized_planets.cypher | cypher-shell -a bolt://[host]:[port] -u [user] -p [password]  
-   curl https://raw.githubusercontent.com/neo4j-datasets/solar-system/master/ cypher/load_link.cypher |cypher-shell -a bolt://[host]:[port] -u [user] -p [password]
+   curl https://raw.githubusercontent.com/neo4j-datasets/solar-system/master/cypher/load_link.cypher | cypher-shell -a bolt://[host]:[port] -u [user] -p [password]
 
 ## LICENSE
 
