@@ -28,33 +28,61 @@ MATCH (neptune_en:Localize{id:"neptune_en"})
 MATCH (neptune_ja:Localize{id:"neptune_ja"})
 MATCH (pluto_en:Localize{id:"pluto_en"})
 MATCH (pluto_ja:Localize{id:"pluto_ja"})
-CREATE
-  (mercury)-[:ORBIT]->(sun),
-  (venus)-[:ORBIT]->(sun),
-  (earth)-[:ORBIT]->(sun),
-  (mars)-[:ORBIT]->(sun),
-  (jupiter)-[:ORBIT]->(sun),
-  (saturn)-[:ORBIT]->(sun),
-  (uranus)-[:ORBIT]->(sun),
-  (neptune)-[:ORBIT]->(sun),
-  (pluto)-[:ORBIT]->(sun),
-  (sun)-[:TRANSLATION{LCID:"en"}]->(sun_en),
-  (sun)-[:TRANSLATION{LCID:"ja"}]->(sun_ja),
-  (mercury)-[:TRANSLATION{LCID:"en"}]->(mercury_en),
-  (mercury)-[:TRANSLATION{LCID:"ja"}]->(mercury_ja),
-  (venus)-[:TRANSLATION{LCID:"en"}]->(venus_en),
-  (venus)-[:TRANSLATION{LCID:"ja"}]->(venus_ja),
-  (earth)-[:TRANSLATION{LCID:"en"}]->(earth_en),
-  (earth)-[:TRANSLATION{LCID:"ja"}]->(earth_ja),
-  (mars)-[:TRANSLATION{LCID:"en"}]->(mars_en),
-  (mars)-[:TRANSLATION{LCID:"ja"}]->(mars_ja),
-  (jupiter)-[:TRANSLATION{LCID:"en"}]->(jupiter_en),
-  (jupiter)-[:TRANSLATION{LCID:"ja"}]->(jupiter_ja),
-  (saturn)-[:TRANSLATION{LCID:"en"}]->(saturn_en),
-  (saturn)-[:TRANSLATION{LCID:"ja"}]->(saturn_ja),
-  (uranus)-[:TRANSLATION{LCID:"en"}]->(uranus_en),
-  (uranus)-[:TRANSLATION{LCID:"ja"}]->(uranus_ja),
-  (neptune)-[:TRANSLATION{LCID:"en"}]->(neptune_en),
-  (neptune)-[:TRANSLATION{LCID:"ja"}]->(neptune_ja),
-  (pluto)-[:TRANSLATION{LCID:"en"}]->(pluto_en),
-  (pluto)-[:TRANSLATION{LCID:"ja"}]->(pluto_ja);
+MERGE
+  (mercury)-[:ORBIT]->(sun)
+MERGE
+  (venus)-[:ORBIT]->(sun)
+MERGE
+  (earth)-[:ORBIT]->(sun)
+MERGE
+  (mars)-[:ORBIT]->(sun)
+MERGE
+  (jupiter)-[:ORBIT]->(sun)
+MERGE
+  (saturn)-[:ORBIT]->(sun)
+MERGE
+  (uranus)-[:ORBIT]->(sun)
+MERGE
+  (neptune)-[:ORBIT]->(sun)
+MERGE
+  (pluto)-[:ORBIT]->(sun)
+MERGE
+  (sun)-[:TRANSLATION{LCID:"en"}]->(sun_en)
+MERGE
+  (sun)-[:TRANSLATION{LCID:"ja"}]->(sun_ja)
+MERGE
+  (mercury)-[:TRANSLATION{LCID:"en"}]->(mercury_en)
+MERGE
+  (mercury)-[:TRANSLATION{LCID:"ja"}]->(mercury_ja)
+MERGE
+  (venus)-[:TRANSLATION{LCID:"en"}]->(venus_en)
+MERGE
+  (venus)-[:TRANSLATION{LCID:"ja"}]->(venus_ja)
+MERGE
+  (earth)-[:TRANSLATION{LCID:"en"}]->(earth_en)
+MERGE
+  (earth)-[:TRANSLATION{LCID:"ja"}]->(earth_ja)
+MERGE
+  (mars)-[:TRANSLATION{LCID:"en"}]->(mars_en)
+MERGE
+  (mars)-[:TRANSLATION{LCID:"ja"}]->(mars_ja)
+MERGE
+  (jupiter)-[:TRANSLATION{LCID:"en"}]->(jupiter_en)
+MERGE
+  (jupiter)-[:TRANSLATION{LCID:"ja"}]->(jupiter_ja)
+MERGE
+  (saturn)-[:TRANSLATION{LCID:"en"}]->(saturn_en)
+MERGE
+  (saturn)-[:TRANSLATION{LCID:"ja"}]->(saturn_ja)
+MERGE
+  (uranus)-[:TRANSLATION{LCID:"en"}]->(uranus_en)
+MERGE
+  (uranus)-[:TRANSLATION{LCID:"ja"}]->(uranus_ja)
+MERGE
+  (neptune)-[:TRANSLATION{LCID:"en"}]->(neptune_en)
+MERGE
+  (neptune)-[:TRANSLATION{LCID:"ja"}]->(neptune_ja)
+MERGE
+  (pluto)-[:TRANSLATION{LCID:"en"}]->(pluto_en)
+MERGE
+  (pluto)-[:TRANSLATION{LCID:"ja"}]->(pluto_ja)
