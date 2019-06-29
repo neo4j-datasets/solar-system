@@ -8,6 +8,8 @@ MATCH (saturn:Planet{name:"Saturn"})
 MATCH (uranus:Planet{name:"Uranus"})
 MATCH (neptune:Planet{name:"Neptune"})
 MATCH (pluto:Planet{name:"Pluto"})
+MATCH (sun_en:Localize{id:"sun_en"})
+MATCH (sun_ja:Localize{id:"sun_ja"})
 MATCH (mercury_en:Localize{id:"mercury_en"})
 MATCH (mercury_ja:Localize{id:"mercury_ja"})
 MATCH (venus_en:Localize{id:"venus_en"})
@@ -36,6 +38,8 @@ CREATE
   (uranus)-[:ORBIT]->(sun),
   (neptune)-[:ORBIT]->(sun),
   (pluto)-[:ORBIT]->(sun),
+  (sun)-[:TRANSLATION{LCID:"en"}]->(sun_en),
+  (sun)-[:TRANSLATION{LCID:"ja"}]->(sun_ja),
   (mercury)-[:TRANSLATION{LCID:"en"}]->(mercury_en),
   (mercury)-[:TRANSLATION{LCID:"ja"}]->(mercury_ja),
   (venus)-[:TRANSLATION{LCID:"en"}]->(venus_en),
